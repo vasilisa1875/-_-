@@ -25,20 +25,20 @@
         .header,
         .container {
             display: grid;
-            width: 100%;
-
+            width: 100vw;
+            background-color: rgb(237, 233, 229);
         }
 
         .header {
             grid-template-columns: 2fr 3fr 1fr;
-            /* padding: 5px;*/
-            background-color: rgb(216, 213, 209);
             text-align: center;
+
         }
 
         h1 {
             width: 621px;
             height: 140px;
+            padding: 15px 100px;
             font-family: 'Red Hat Display';
             font-style: normal;
             font-weight: 500;
@@ -49,22 +49,35 @@
         }
 
         .container {
-
-            grid-template-rows: repeat(13, 1fr);
+            display: grid;
+            grid-template-rows: 3fr 4fr;
         }
 
-        .info {}
+        .arrovs {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
 
         .image {
             background: url(images/image1.png);
             max-height: 100%;
-            width: 796px;
             height: 609px;
-            /*justify-items: start;*/
-            align-items: flex-end;
+            width: 796px;
+        }
+
+        .image,
+        .info,
+        h1 {
+            position: relative;
+        }
+
+        .info {
+            width: 644px;
         }
 
         .text {
+            /* Dudeshape надпись*/
             padding: 40px 100px;
             font-family: 'Red Hat Display';
             width: 128px;
@@ -75,6 +88,17 @@
             line-height: 30px;
             text-decoration-line: underline;
             color: #222222;
+        }
+
+        .text1 {
+            padding-left: 100px;
+            Width: 516px;
+            Height: 96px;
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
         }
     </style>
 
@@ -102,8 +126,10 @@
     <main class="container">
         <div class="info">
             <h1>Get Your Best Cosmetic Products Here</h1>
+            <p class="text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy</p>
         </div>
-        <div class="image"><img src="images/Group 11.png" width="138px" alt="стрелки прокрутки"></div>
+        <div class="image"><img class="arrovs" src="images/Group 11.png" width="138px" alt="стрелки прокрутки"></div>
     </main>
 
 </body>
