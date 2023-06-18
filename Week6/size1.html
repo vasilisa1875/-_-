@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket</title>
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald&family=Pattaya&family=Playfair+Display:ital,wght@1,500;1,700&family=Red+Hat+Display:wght@500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .menu,
+        .menu1,
+        li {
+            display: inline;
+            padding-top: 40px;
+            padding-right: 10;
+            text-decoration: none;
+        }
+
+        .header,
+        .container {
+            display: grid;
+            width: 100%;
+
+        }
+
+        .header {
+            grid-template-columns: 2fr 3fr 1fr;
+            /* padding: 5px;*/
+            background-color: rgb(216, 213, 209);
+            text-align: center;
+        }
+
+        h1 {
+            width: 621px;
+            height: 140px;
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 70px;
+            color: #000000;
+            z-index: 1;
+        }
+
+        .container {
+
+            grid-template-rows: repeat(13, 1fr);
+        }
+
+        .info {}
+
+        .image {
+            background: url(images/image1.png);
+            max-height: 100%;
+            width: 796px;
+            height: 609px;
+            /*justify-items: start;*/
+            align-items: flex-end;
+        }
+
+        .text {
+            padding: 40px 100px;
+            font-family: 'Red Hat Display';
+            width: 128px;
+            height: 30px;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            text-decoration-line: underline;
+            color: #222222;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="text">Dudeshape</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="menu1">
+            <ul>
+                <li><a href="#"><img src="images/профиль.png" width="15px" height="15px" alt="профиль"></a></li>
+                <li><a href=" #"><img src="images/корзина.png " width="15px" height="15px" alt="корзина"></a></li>
+                <li><a href="#"><img src="images/меню.png " width="15px" height="15px" alt="меню"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="info">
+            <h1>Get Your Best Cosmetic Products Here</h1>
+        </div>
+        <div class="image"><img src="images/Group 11.png" width="138px" alt="стрелки прокрутки"></div>
+    </main>
+
+</body>
+
+</html>
